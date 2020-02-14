@@ -1,5 +1,5 @@
 import React from 'react';
-import Menu from './MarketSchedule';
+import Menu from './Menu';
 
 var tmpKegList = [  
   {  
@@ -35,14 +35,14 @@ var tmpKegList = [
 function MenuList() {
   return (
     <div>
-        {tmpKegList.map((menu, index) => 
-            <Menu brewery={menu.brewery}
-              name={menu.name}
-              alcoholContent={menu.alcoholContent}
-              category = {menu.category}
-              price = {menu.price}
-              key = {index}/>
-        )}
+      {tmpKegList.map((menu, index) => 
+        <Menu brewery={menu.brewery}
+          name={menu.name}
+          alcoholContent={menu.alcoholContent}
+          category = {menu.category}
+          price = {menu.price}
+          key = {index}/>
+      )}
     </div>
   );
 }

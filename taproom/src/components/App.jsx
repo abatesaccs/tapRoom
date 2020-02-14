@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import Error404 from './Route404';
 import Background from '../assets/images/TaproomBackground2.png';
 import Landing from './Landing';
+import MenuList from './MenuList';
 
 function App(){
   var style = {  
@@ -23,7 +24,7 @@ function App(){
         <Header/>
         <Switch>
           <Route exact path='/' component={Landing} />
-          {/* <Route path='/menu' component={MenuList} /> */}
+          <Route path='/menu' component={MenuList} />
           <Route component={Error404} />
         </Switch>
       </div>

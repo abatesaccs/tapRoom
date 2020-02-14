@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './homeLink.css';
 
 
 function Landing(){
@@ -12,7 +13,7 @@ function Landing(){
   return (
     <div style={errorStyle}>
       <h1 style={landingSize}>Tipsy Toms Terrible Taproom</h1>
-      <h3><Link to="/">Menu</Link></h3>
+      <h3><Link class='homeLink' to="/menu">Menu</Link></h3>
     </div>
   );
 }
