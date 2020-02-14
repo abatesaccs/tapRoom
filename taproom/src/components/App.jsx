@@ -5,6 +5,7 @@ import Error404 from './Route404';
 import Background from '../assets/images/TaproomBackground2.png';
 import Landing from './Landing';
 import MenuList from './MenuList';
+import AddKeg from './AddKeg';
 
 function App(){
   var style = {  
@@ -25,6 +26,7 @@ function App(){
         <Switch>
           <Route exact path='/' component={Landing} />
           <Route path='/menu' component={MenuList} />
+          <Route path='/addKeg' component={AddKeg}/>
           <Route component={Error404} />
         </Switch>
       </div>

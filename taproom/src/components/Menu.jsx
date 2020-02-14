@@ -11,7 +11,7 @@ function Menu(props){
   };
   return (
     <div>
-      <h5 style={headerPadding}>{props.brewery} - {props.name}</h5>
+      <h4 style={headerPadding}>{props.brewery} - {props.name}</h4>
       <p style={paragraphPadding}>{props.category} - <em>{props.alcoholContent}</em></p>
       <p style={paragraphPadding}>{props.price}</p>
     </div>

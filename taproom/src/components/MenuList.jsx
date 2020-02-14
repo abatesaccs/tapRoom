@@ -1,5 +1,7 @@
 import React from 'react';
 import Menu from './Menu';
+import { Link } from 'react-router-dom';
+import './homeLink.css';
 
 var tmpKegList = [  
   {  
@@ -32,6 +34,10 @@ var tmpKegList = [
   }
 ];
 
+var addStyle = {
+    marginTop: '5vh'
+};
+
 function MenuList() {
   return (
     <div>
@@ -43,6 +49,9 @@ function MenuList() {
           price = {menu.price}
           key = {index}/>
       )}
+      <div style={addStyle}>
+        <Link className='addLink' to='/addKeg'>Add Keg</Link>
+      </div>
     </div>
   );
 }

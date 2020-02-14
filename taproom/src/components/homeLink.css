@@ -4,6 +4,9 @@
 }
 
 .ErrLink {
-    text-decoration: none;
-    color: #AAA;
+    color: #FFF;
+}
+
+.addLink {
+    color: #FFF;
 }
