@@ -2,18 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Menu(props){
-  var paragraphPadding = {
+  var paragraphMidPadding = {
     padding: '0',
     margin: '0'
   };
-  var headerPadding = {
+  var paragraphBotPadding = {
+    padding: '0',
     marginTop: '0'
   };
+  var headerPadding = {
+    marginTop: '0',
+    marginBottom: '0'
+  };
+  var text = {
+    fontFamily: 'Quicksand, sans-serif'
+  };
   return (
-    <div>
+    <div style={text}>
       <h4 style={headerPadding}>{props.brewery} - {props.name}</h4>
-      <p style={paragraphPadding}>{props.category} - <em>{props.alcoholContent}</em></p>
-      <p style={paragraphPadding}>{props.price}</p>
+      <p style={paragraphMidPadding}>{props.category} - <em>{props.alcoholContent}</em></p>
+      <p style={paragraphBotPadding}>{props.price}</p>
     </div>
   );
 }

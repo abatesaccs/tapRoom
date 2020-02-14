@@ -7,35 +7,35 @@ var tmpKegList = [
   {  
     brewery: 'Brewery',
     name: 'Brewery\'s Best',
-    alcoholContent: '9001%',
+    alcoholContent: '9001 ABV',
     category: 'Lager',
     price: '$3.50'
   },
   {  
     brewery: 'Brewery',
     name: 'Brewery\'s Best',
-    alcoholContent: '9001%',
+    alcoholContent: '9001 ABV',
     category: 'Lager',
     price: '$3.50'
   },
   {  
     brewery: 'Brewery',
     name: 'Brewery\'s Best',
-    alcoholContent: '9001%',
+    alcoholContent: '9001 ABV',
     category: 'Lager',
     price: '$3.50'
   },
   {  
     brewery: 'Brewery',
     name: 'Brewery\'s Best',
-    alcoholContent: '9001%',
+    alcoholContent: '9001 ABV',
     category: 'Lager',
     price: '$3.50'
   }
 ];
 
 var addStyle = {
-    marginTop: '5vh'
+  marginTop: '5vh'
 };
 
 function MenuList() {
