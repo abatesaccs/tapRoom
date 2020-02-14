@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './homeLink.css';
 
 
 function Route404(props){
@@ -10,7 +11,7 @@ function Route404(props){
     <div style={errorStyle}>
       <h1>404</h1>
       <h2>The page {props.location.pathname} does not exist!</h2>
-      <h3>Would you like to return <Link to="/">home</Link> instead?</h3>
+      <h3>Would you like to return <Link class='ErrLink' to="/">home</Link> instead?</h3>
     </div>
   );
 }

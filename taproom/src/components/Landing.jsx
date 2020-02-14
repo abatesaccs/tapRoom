@@ -12,8 +12,9 @@ function Landing(){
   };
   return (
     <div style={errorStyle}>
-      <h1 style={landingSize}>Tipsy Toms Terrible Taproom</h1>
+      <h1 style={landingSize}>Tipsy Tom's Terrible Taproom</h1>
       <h3><Link class='homeLink' to="/menu">Menu</Link></h3>
+      <h3><Link class='homeLink' to='/garbage'>404</Link></h3>
     </div>
   );
 }
