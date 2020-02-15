@@ -19,7 +19,7 @@ const useStyles = makeStyles({
     width: '40vw',
     maxWidth: '500px',
     marginTop: '5vh',
-    height: '490px',
+    height: '500px',
     paddingBottom: '5vh',
     margin: 'auto'
   },

@@ -6,6 +6,7 @@ import Background from '../assets/images/TaproomBackground2.png';
 import Landing from './Landing';
 import MenuList from './MenuList';
 import AddKeg from './AddKeg';
+import Cowbell from './Cowbell';
 
 function App(){
   var style = {  
@@ -27,6 +28,7 @@ function App(){
           <Route exact path='/' component={Landing} />
           <Route path='/menu' component={MenuList} />
           <Route path='/addKeg' component={AddKeg}/>
+          <Route path='/cowbell' component={Cowbell}/>
           <Route component={Error404} />
         </Switch>
       </div>
