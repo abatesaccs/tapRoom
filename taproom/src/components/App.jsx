@@ -28,7 +28,7 @@ function App(){
           <Route exact path='/' component={Landing} />
           <Route path='/menu' component={MenuList} />
           <Route path='/addKeg' component={AddKeg}/>
-          <Route path='/cowbell' component={Cowbell}/>
+          <Route path='/cowbell' component={Cowbell}/> {/* easter egg */} 
           <Route component={Error404} />
         </Switch>
       </div>
