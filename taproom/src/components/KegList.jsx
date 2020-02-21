@@ -4,37 +4,6 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './homeLink.css';
 
-var tmpKegList = [  
-  {  
-    brewery: 'Brewery',
-    name: 'Brewery\'s Best',
-    alcoholContent: '9001 ABV',
-    category: 'Lager',
-    price: '$3.50'
-  },
-  {  
-    brewery: 'Brewery',
-    name: 'Brewery\'s Best',
-    alcoholContent: '9001 ABV',
-    category: 'Lager',
-    price: '$3.50'
-  },
-  {  
-    brewery: 'Brewery',
-    name: 'Brewery\'s Best',
-    alcoholContent: '9001 ABV',
-    category: 'Lager',
-    price: '$3.50'
-  },
-  {  
-    brewery: 'Brewery',
-    name: 'Brewery\'s Best',
-    alcoholContent: '9001 ABV',
-    category: 'Lager',
-    price: '$3.50'
-  }
-];
-
 var addStyle = {
   marginTop: '5vh'
 };

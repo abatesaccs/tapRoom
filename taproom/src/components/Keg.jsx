@@ -20,8 +20,8 @@ function Keg(props){
   return (
     <div style={text}>
       <h4 style={headerPadding}>{props.brewery} - {props.name}</h4>
-      <p style={paragraphMidPadding}>{props.category} - <em>{props.abv}</em></p>
-      <p style={paragraphBotPadding}>{props.price}</p>
+      <p style={paragraphMidPadding}>{props.category} - <em>{props.abv}%</em></p>
+      <p style={paragraphBotPadding}>${props.price}</p>
     </div>
   );
 }
