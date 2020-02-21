@@ -14,19 +14,21 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterKegList: []
-
+      masterKegList: {}
     };
-    this.hanleAddingNewKeg = this.hanleAddingNewKeg.bind(this);
+    this.handleAddingNewKeg = this.handleAddingNewKeg.bind(this);
   }
 
-  hanleAddingNewKeg(newKeg){
+  handleAddingNewKeg(newKeg){
     var newKegId = v4();
+    console.log(this.state.masterKegList);
     var newMasterKegList = Object.assign({}, 
     this.state.masterKegList, {
       [newKegId]: newKeg
     });
+    console.log(this.state.masterKegList);
     this.setState({masterKegList: newMasterKegList});
+    console.log(this.state.masterKegList);
   }
 
   render(){
@@ -47,7 +49,7 @@ class App extends React.Component {
           <Header/>
           <Switch>
             <Route exact path='/' component={Landing} />
-            <Route path='/menu' component={KegList} />
+            <Route path='/menu' render={()=><KegList kegList={this.state.masterKegList} />} />
             <Route path='/addKeg' render={()=><AddKeg onNewKegCreation={this.handleAddingNewKeg} />} />
             <Route path='/cowbell' component={Cowbell} /> {/* easter egg */} 
             <Route component={Error404} />

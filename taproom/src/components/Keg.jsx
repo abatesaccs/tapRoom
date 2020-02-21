@@ -20,7 +20,7 @@ function Keg(props){
   return (
     <div style={text}>
       <h4 style={headerPadding}>{props.brewery} - {props.name}</h4>
-      <p style={paragraphMidPadding}>{props.category} - <em>{props.alcoholContent}</em></p>
+      <p style={paragraphMidPadding}>{props.category} - <em>{props.abv}</em></p>
       <p style={paragraphBotPadding}>{props.price}</p>
     </div>
   );
@@ -30,7 +30,9 @@ Keg.propTypes = {
   brewery: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
-  alcoholContent: PropTypes.string
+  abv: PropTypes.string,
+  price: PropTypes.string.isRequired,
+  kegId: PropTypes.string
 };
 
 export default Keg;
