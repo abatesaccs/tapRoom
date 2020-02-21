@@ -45,10 +45,11 @@ function AddKeg(){
             <TextField id="filled-basic" label="Category" variant="filled" />
             <br/><br/>
             <TextField id="filled-basic" label="Price" variant="filled" />
+            <Button className={classes.button} variant='contained' size='medium' color='#33c9dc' type='submit'>Enter</Button>
           </form>
         </CardContent>
         <CardActions>
-          <Button className={classes.button} variant='contained' size='medium' color='#33c9dc' to='/menu' component={Link}>Enter</Button>
+          
         </CardActions>
       </Card>
     </div>

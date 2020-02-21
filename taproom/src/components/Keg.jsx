@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Menu(props){
+function Keg(props){
   var paragraphMidPadding = {
     padding: '0',
     margin: '0'
@@ -26,11 +26,11 @@ function Menu(props){
   );
 }
 
-Menu.propTypes = {
+Keg.propTypes = {
   brewery: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
   alcoholContent: PropTypes.string
 };
 
-export default Menu;
+export default Keg;

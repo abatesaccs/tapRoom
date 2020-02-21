@@ -4,9 +4,10 @@ import { Switch, Route } from 'react-router-dom';
 import Error404 from './Route404';
 import Background from '../assets/images/TaproomBackground2.png';
 import Landing from './Landing';
-import MenuList from './MenuList';
+import KegList from './KegList';
 import AddKeg from './AddKeg';
 import Cowbell from './Cowbell';
+import { v4 } from 'uuid';
 
 class App extends React.Component {
 
@@ -17,6 +18,15 @@ class App extends React.Component {
 
     };
     this.hanleAddingNewKeg = this.hanleAddingNewKeg.bind(this);
+  }
+
+  hanleAddingNewKeg(newKeg){
+    var newKegId = v4();
+    var newMasterKegList = Object.assign({}, 
+    this.state.masterKegList, {
+      [newKegId]: newKeg
+    });
+    this.setState({masterKegList: newMasterKegList});
   }
 
   render(){
@@ -37,9 +47,9 @@ class App extends React.Component {
           <Header/>
           <Switch>
             <Route exact path='/' component={Landing} />
-            <Route path='/menu' component={MenuList} />
-            <Route path='/addKeg' component={AddKeg}/>
-            <Route path='/cowbell' component={Cowbell}/> {/* easter egg */} 
+            <Route path='/menu' component={KegList} />
+            <Route path='/addKeg' render={()=><AddKeg onNewKegCreation={this.handleAddingNewKeg} />} />
+            <Route path='/cowbell' component={Cowbell} /> {/* easter egg */} 
             <Route component={Error404} />
           </Switch>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Menu from './Menu';
+import Keg from './Keg';
 import { Link } from 'react-router-dom';
 import './homeLink.css';
 
@@ -38,15 +38,15 @@ var addStyle = {
   marginTop: '5vh'
 };
 
-function MenuList() {
+function KegList() {
   return (
     <div>
-      {tmpKegList.map((menu, index) => 
-        <Menu brewery={menu.brewery}
-          name={menu.name}
-          alcoholContent={menu.alcoholContent}
-          category = {menu.category}
-          price = {menu.price}
+      {tmpKegList.map((eg, index) => 
+        <Keg brewery={Keg.brewery}
+          name={Keg.name}
+          alcoholContent={Keg.alcoholContent}
+          category = {Keg.category}
+          price = {Keg.price}
           key = {index}/>
       )}
       <div style={addStyle}>
@@ -56,4 +56,4 @@ function MenuList() {
   );
 }
 
-export default MenuList;
+export default KegList;
