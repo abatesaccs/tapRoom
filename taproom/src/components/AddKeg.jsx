@@ -18,7 +18,7 @@ const useStyles = makeStyles({
     width: '40vw',
     maxWidth: '500px',
     marginTop: '5vh',
-    height: '500px',
+    height: '550px',
     paddingBottom: '5vh',
     margin: 'auto'
   },
@@ -35,10 +35,11 @@ function AddKeg(props){
   const [abv, setAbv] = useState('');
   const [category, setCategory] = useState('');
   const [price, setPrice] = useState('');
+  const [pints, setPints] = useState('');
 
   function handleNewKegSubmission(event) {
     event.preventDefault();
-    props.onNewKegCreation({brewery: brewery, name: name, abv: abv, category: category, price: price});
+    props.onNewKegCreation({brewery: brewery, name: name, abv: abv, category: category, price: price, pints: pints});
   }
 
   return(
@@ -56,6 +57,8 @@ function AddKeg(props){
             <TextField id="filled-basic" label="Category" variant="filled" type='text' value={category} onInput={ e=>setCategory(e.target.value)} />
             <br/><br/>
             <TextField id="filled-basic" type='text' label="Price" variant="filled" value={price} onInput={ e=>setPrice(e.target.value)} />
+            <br/><br/>
+            <TextField id="filled-basic" type='text' label="Number of Pints" variant="filled" value={pints} onInput={ e=>setPints(e.target.value)} />
             <br/><br/>
             <Button className={classes.button} variant='contained' size='medium' color='primary' type='submit'>Enter</Button>
           </form>

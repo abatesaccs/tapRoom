@@ -21,14 +21,11 @@ class App extends React.Component {
 
   handleAddingNewKeg(newKeg){
     var newKegId = v4();
-    console.log(this.state.masterKegList);
     var newMasterKegList = Object.assign({}, 
-    this.state.masterKegList, {
-      [newKegId]: newKeg
-    });
-    console.log(this.state.masterKegList);
+      this.state.masterKegList, {
+        [newKegId]: newKeg
+      });
     this.setState({masterKegList: newMasterKegList});
-    console.log(this.state.masterKegList);
   }
 
   render(){
