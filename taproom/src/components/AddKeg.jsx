@@ -63,35 +63,6 @@ function AddKeg(props){
             <Button className={classes.button} variant='contained' size='medium' color='primary' type='submit'>Enter</Button>
           </form>
 
-          {/* <form onSubmit={handleNewKegSubmission}>
-            <input
-              type='text'
-              id='brewery'
-              placeholder='Brewery'
-              ref={(input) => {_brewery = input;}}/>
-            <input
-              type='text'
-              id='name'
-              placeholder='name'
-              ref={(input) => {_name = input;}}/>
-            <input
-              type='text'
-              id='abv'
-              placeholder='ABV'
-              ref={(input) => {_abv = input;}}/>
-            <input
-              type='text'
-              id='category'
-              placeholder='Category'
-              ref={(input) => {_category = input;}}/>
-            <input
-              type='text'
-              id='price'
-              placeholder='Price'
-              ref={(input) => {_price = input;}}/>
-            <button type='submit'>Help!</button>
-          </form> */}
-
         </CardContent>
       </Card>
     </div>
